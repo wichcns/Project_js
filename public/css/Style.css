@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(125deg,#3498db,#8e44ad);
+}
+.box{
+    width: 380px;
+    padding: 20px;
+    border-radius: 10px;
+    background: black;
+}
+.number{
+    width: 100%;
+    color: #fff;
+    font-size: 3rem;
+    text-align: end;
+}
+.btn{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #a0a0a0;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .1s;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.btn-operator {
+    background: #F69A06;
+    color: #fff;
+}
+.btn-number{
+    background: #313131;
+    color: #fff;
+}
+.btn-zero{
+    width: 140px;
+    height: 70px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.operator-active{
+    background: #fff;
+    color: #F69A06;
+}

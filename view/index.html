@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/Style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="box">
+        <div id="shownumber" class="number">0</div>
+        <div class="row">
+            <div onclick="clearval()" class="btn">AC</div>
+            <div onclick="remove()" class="btn">C</div>
+            <div class="btn">%</div>
+            <div id="op4" onclick="operator('/', this)" class="btn btn-operator">/</div>
+        </div>
+        <div class="row">
+            <div onclick="number(7)" class="btn btn-number">7</div>
+            <div onclick="number(8)"  class="btn btn-number">8</div>
+            <div onclick="number(9)"  class="btn btn-number">9</div>
+            <div id="op3" onclick="operator('X', this)"  class="btn btn-operator">x</div>
+        </div>
+        <div class="row">
+            <div onclick="number(4)"  class="btn btn-number">4</div>
+            <div onclick="number(5)"  class="btn btn-number">5</div>
+            <div onclick="number(6)"  class="btn btn-number">6</div>
+            <div id="op2" onclick="operator('-', this)" class="btn btn-operator">-</div>
+        </div>
+        <div class="row">
+            <div onclick="number(1)"  class="btn btn-number">1</div>
+            <div onclick="number(2)"  class="btn btn-number">2</div>
+            <div onclick="number(3)"  class="btn btn-number">3</div>
+            <div id="op1" onclick="operator('+', this)" class="btn btn-operator">+</div>
+        </div>
+        <div class="row">
+            <div onclick="number(0)"  class="btn btn-number btn-zero">0</div>
+            <div class="btn btn-number">.</div>
+            <div onclick="sum()" class="btn btn-operator">=</div>
+        </div>
+    </div>
+
+    <script src="../public/js/script.js"></script>
+</body>
+
+</html>
